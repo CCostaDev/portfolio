@@ -18,3 +18,9 @@
     ),
     radial-gradient(circle at bottom, rgba(2, 6, 23, 0.95), transparent 60%);
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

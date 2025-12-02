@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       <div className="flex-1 flex justify-center md:justify-end">
-        <div className="h-40 w-40 md:h-52 md:w-52 rounded-[32px] border border-accent/40 bg-bg-elevated shadow-[0_0_25px_rgba(214,184,146,0.18)] overflow-hidden">
+        <div className="h-40 w-40 md:h-52 md:w-52 rounded-4xl border border-accent/40 bg-bg-elevated shadow-[0_0_25px_rgba(214,184,146,0.18)] overflow-hidden">
           <img
             src="/me.jpg"
             alt="Cris"
