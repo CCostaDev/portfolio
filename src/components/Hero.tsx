@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <motion.section
-      id="hero"
       className="min-h-[80vh] flex flex-col md:flex-row items-center gap-10 py-16 md:py-24"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}

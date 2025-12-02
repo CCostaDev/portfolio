@@ -17,7 +17,7 @@ const Navbar = () => {
     <header className="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/80 backdrop-blur">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
         <a
-          href="#hero"
+          href="#top"
           className="text-sm font-semibold tracking-tight hover:opacity-80"
           onClick={closeMenu}
         >

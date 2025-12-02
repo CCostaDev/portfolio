@@ -8,7 +8,10 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-bg text-slate-50 relative overflow-hidden">
+    <div
+      id="top"
+      className="min-h-screen bg-bg text-slate-50 relative overflow-hidden"
+    >
       {/* softer, darker global glow */}
       <div
         aria-hidden
