@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --color-accent: #d6b892;
+
+  /* dark-mode harmony */
+  --color-bg: #020617; /* main background */
+  --color-bg-elevated: #050818; /* cards / sections */
+  --color-border-subtle: #1f2937; /* subtle borders */
+  --color-text-muted: #9ca3af; /* secondary text */
+}
+
+@utility bg-hero-glow {
+  background: radial-gradient(
+      circle at top,
+      rgba(214, 184, 146, 0.1),
+      transparent 55%
+    ),
+    radial-gradient(circle at bottom, rgba(2, 6, 23, 0.95), transparent 60%);
+}

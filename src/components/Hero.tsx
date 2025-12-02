@@ -6,7 +6,7 @@ const Hero = () => {
     >
       {/* side text */}
       <div className="flex-1">
-        <p className="text-xs uppercase tracking-[0.25em] text-emerald-400 mb-3">
+        <p className="text-xs uppercase tracking-[0.25em] text-accent mb-3">
           Junior Software Developer
         </p>
 
@@ -23,23 +23,26 @@ const Hero = () => {
         <div className="flex flex-wrap gap-3">
           <a
             href="#projects"
-            className="px-4 py-2 rounded-lg bg-emerald-500 text-slate-950 text-sm font-semibold hover:bg-emerald-400 transition"
+            className="px-4 py-2 rounded-lg bg-accent text-slate-950 text-sm font-semibold hover:bg-accent/90 transition"
           >
             View projects
           </a>
           <a
             href="#contact"
-            className="px-4 py-2 rounded-lg border border-slate-600 text-slate-200 text-sm hover:border-emerald-400 transition"
+            className="px-4 py-2 rounded-lg border border-slate-600 text-slate-200 text-sm hover:border-accent transition"
           >
             Contact me
           </a>
         </div>
       </div>
 
-      {/* Placeholder for photo */}
       <div className="flex-1 flex justify-center md:justify-end">
-        <div className="h-40 w-40 md:h-52 md:w-52 rounded-3xl border border-slate-700 bg-linear-to-br from-slate-800 via-slate-900 to-emerald-700 shadow-lg shadow-emerald-500/20 flex items-center justify-center text-[11px] text-slate-200">
-          Photo / logo here
+        <div className="h-40 w-40 md:h-52 md:w-52 rounded-[32px] border border-accent/40 bg-bg-elevated shadow-[0_0_25px_rgba(214,184,146,0.18)] overflow-hidden">
+          <img
+            src="/me.jpg"
+            alt="Cris"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
     </section>
