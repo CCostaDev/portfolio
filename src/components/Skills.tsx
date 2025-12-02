@@ -4,13 +4,28 @@ const skills = {
   Frontend: [
     "React",
     "TypeScript",
+    "Tailwind CSS",
     "JavaScript (ES6+)",
     "HTML",
     "CSS",
-    "Tailwind CSS",
+    "Vite",
   ],
-  Backend: ["Node.js", "Python", "REST APIs", "MongoDB", "SQL (basics)"],
-  Tools: ["Git", "GitHub", "Vite", "Postman", "VS Code"],
+  "Backend / Scripting": [
+    "Node.js",
+    "Python",
+    "Express",
+    "REST APIs",
+    "MongoDB",
+    "SQL (basics)",
+  ],
+  "AI & Automation": [
+    "OpenAI API",
+    "RAG (basics)",
+    "ChromaDB",
+    "Embeddings",
+    "API Integrations",
+  ],
+  Tools: ["Git", "GitHub", "Linux / Raspberry Pi", "Postman", "VS Code"],
 };
 
 const Skills = () => {
@@ -24,7 +39,7 @@ const Skills = () => {
       transition={{ duration: 0.4, delay: 0.05 }}
     >
       <h2 className="text-xl font-semibold mb-4">Skills</h2>
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-4">
         {Object.entries(skills).map(([category, items]) => (
           <div
             key={category}
