@@ -1,8 +1,14 @@
+import { motion } from "framer-motion";
+
 const Hero = () => {
   return (
-    <section
+    <motion.section
       id="hero"
       className="min-h-[80vh] flex flex-col md:flex-row items-center gap-10 py-16 md:py-24"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.4 }}
+      transition={{ duration: 0.4 }}
     >
       {/* side text */}
       <div className="flex-1">
@@ -45,7 +51,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
