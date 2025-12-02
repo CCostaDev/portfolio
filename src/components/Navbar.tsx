@@ -52,7 +52,7 @@ const Navbar = () => {
           <div className="flex flex-col gap-[3px]">
             <span
               className={`h-0.5 w-4 rounded-full bg-slate-100 transition-transform ${
-                isOpen ? "translate-y-[4px] rotate-45" : ""
+                isOpen ? "translate-y-1 rotate-45" : ""
               }`}
             />
             <span
@@ -62,7 +62,7 @@ const Navbar = () => {
             />
             <span
               className={`h-0.5 w-4 rounded-full bg-slate-100 transition-transform ${
-                isOpen ? "-translate-y-[4px] -rotate-45" : ""
+                isOpen ? "-translate-y-1 -rotate-45" : ""
               }`}
             />
           </div>
