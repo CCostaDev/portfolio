@@ -1,6 +1,15 @@
+import { motion } from "framer-motion";
+
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 border-t border-slate-800">
+    <motion.section
+      id="contact"
+      className="py-12 border-t border-slate-800"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.4, delay: 0.05 }}
+    >
       <h2 className="text-xl font-semibold mb-4">Contact</h2>
       <p className="text-sm text-slate-300 mb-4 max-w-md">
         If you'd like to chat about a junior role, a project, or anything
@@ -22,7 +31,7 @@ const Contact = () => {
           GitHub
         </a>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
 import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-12 border-t border-slate-800">
+    <motion.section
+      id="projects"
+      className="py-12 border-t border-slate-800"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.4, delay: 0.05 }}
+    >
       <h2 className="text-xl font-semibold mb-4">Projects</h2>
       <div className="grid gap-5 md:grid-cols-2">
         {projects.map((project) => (
@@ -51,7 +59,7 @@ const Projects = () => {
           </article>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

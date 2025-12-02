@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const skills = {
   Frontend: [
     "React",
@@ -13,7 +15,14 @@ const skills = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-12 border-t border-slate-800">
+    <motion.section
+      id="skills"
+      className="py-12 border-t border-slate-800"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.4, delay: 0.05 }}
+    >
       <h2 className="text-xl font-semibold mb-4">Skills</h2>
       <div className="grid gap-4 md:grid-cols-3">
         {Object.entries(skills).map(([category, items]) => (
@@ -35,7 +44,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 
