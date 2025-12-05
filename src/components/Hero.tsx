@@ -3,52 +3,43 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <motion.section
-      className="min-h-[80vh] flex flex-col md:flex-row items-center gap-10 py-16 md:py-24"
+      className="min-h-[70vh] flex flex-col justify-center gap-6 py-16 md:py-24"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.4 }}
       transition={{ duration: 0.4 }}
     >
       {/* side text */}
-      <div className="flex-1">
-        <p className="text-xs uppercase tracking-[0.25em] text-accent mb-3">
-          Junior Software Developer
-        </p>
+      <p className="font-mono text-xs uppercase tracking-[0.25em] text-muted">
+        Junior Software Developer
+      </p>
 
-        <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-          Hey, I'm Cris.
-        </h1>
+      <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+        Hey, I'm <span className="text-accent">Cris</span>.
+      </h1>
 
-        <p className="text-slate-300 text-sm md:text-base mb-6 max-w-xl">
-          I build practical things: React apps, Discord bots, and AI-powered
-          tools. I'm open to junior frontend, backend or full-stack roles and
-          I'm happy to learn whatever stack the team uses.
-        </p>
+      <p className="max-w-xl text-sm md:text-base text-muted leading-relaxed">
+        I'm a junior frontend developer who enjoys turning ideas into clean
+        functional interfaces. In short, I like building things and watching
+        them come to life.
+      </p>
 
-        <div className="flex flex-wrap gap-3">
-          <a
-            href="#projects"
-            className="px-4 py-2 rounded-lg bg-accent text-slate-950 text-sm font-semibold hover:bg-accent/90 transition"
-          >
-            View projects
-          </a>
-          <a
-            href="#contact"
-            className="px-4 py-2 rounded-lg border border-slate-600 text-slate-200 text-sm hover:border-accent transition"
-          >
-            Contact me
-          </a>
-        </div>
-      </div>
+      <p className="text-xs text-muted">
+        Currently: improving my React / Typescript skills, building personal
+        projects, and applying for junior roles in the Netherlands.
+      </p>
 
-      <div className="flex-1 flex justify-center md:justify-end">
-        <div className="h-72 w-72 md:h-56 md:w-56 rounded-4xl border border-accent/40 bg-bg-elevated shadow-[0_0_25px_rgba(214,184,146,0.18)] overflow-hidden">
-          <img
-            src="/me.jpg"
-            alt="Cris"
-            className="h-full w-full object-cover"
-          />
-        </div>
+      {/* links row */}
+      <div className="mt-2 flex flex-wrap items-center gap-4 text-sm">
+        <a
+          href="#projects"
+          className="rounded-lg border border-accent px-4 py-2 font-medium text-accent hover:bg-accent/10 transition"
+        >
+          View projects
+        </a>
+        <a href="#contact" className="text-muted hover:text-accent transition">
+          Contact me
+        </a>
       </div>
     </motion.section>
   );

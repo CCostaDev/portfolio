@@ -1,22 +1,13 @@
 @import "tailwindcss";
 
-@theme {
-  --color-accent: #d6b892;
-
-  /* dark-mode harmony */
-  --color-bg: #020617; /* main background */
-  --color-bg-elevated: #050818; /* cards / sections */
-  --color-border-subtle: #1f2937; /* subtle borders */
-  --color-text-muted: #9ca3af; /* secondary text */
-}
-
-@utility bg-hero-glow {
-  background: radial-gradient(
-      circle at top,
-      rgba(214, 184, 146, 0.1),
-      transparent 55%
-    ),
-    radial-gradient(circle at bottom, rgba(2, 6, 23, 0.95), transparent 60%);
+:root {
+  --bg: #181825;
+  --bg-elevated: #1e1e2e;
+  --fg: #cdd6f4;
+  --muted: #a6adc8;
+  --muted2: #bac2de;
+  --border: #313244;
+  --accent: #fab387;
 }
 
 @layer base {
@@ -38,5 +29,17 @@
     50% {
       transform: translateY(-6px);
     }
+  }
+}
+
+@layer utilities {
+  .text-accent {
+    color: var(--accent);
+  }
+  .border-accent {
+    border-color: var(--accent);
+  }
+  .text-muted {
+    color: var(--muted);
   }
 }

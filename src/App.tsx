@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div
       id="top"
-      className="min-h-screen bg-bg text-slate-50 relative overflow-hidden"
+      className="min-h-screen bg-[var(--bg)] text-[var(--fg)] relative overflow-hidden"
     >
       {/* softer, darker global glow */}
       <div
