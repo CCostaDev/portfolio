@@ -8,18 +8,10 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div
-      id="top"
-      className="min-h-screen bg-[var(--bg)] text-[var(--fg)] relative overflow-hidden"
-    >
-      {/* softer, darker global glow */}
-      <div
-        aria-hidden
-        className="pointer-events-none fixed inset-0 bg-hero-glow opacity-70"
-      />
-      <div className="relative">
+    <div className="min-h-screen w-full bg-(--bg) text-(--fg)">
+      <div className="mx-auto flex min-h-screen w-full max-w-[90%] md:max-w-[80%] flex-col">
         <Navbar />
-        <main className="max-w-5xl mx-auto px-4">
+        <main className="max-w-5xl mx-auto px-4 pt-20">
           <Hero />
           <About />
           <Skills />

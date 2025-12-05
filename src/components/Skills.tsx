@@ -32,7 +32,7 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="py-12 border-t border-slate-800"
+      className="scroll-mt-15 py-12 border-t border-slate-800"
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
