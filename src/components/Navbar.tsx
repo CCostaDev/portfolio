@@ -21,9 +21,9 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-20 select-none">
-      <div className="bg-[color-mix(in_srgb,var(--bg)_70%,transparent)] backdrop-blur-md">
-        <nav className="flex h-20 items-center justify-between px-5 py-4">
+    <header className="header-blur select-none">
+      <div className="mx-auto w-full max-w-[90%] md:max-w-[80%]">
+        <nav className="relative flex h-20 items-center justify-between p-5 pb-5">
           {/* Logo / Home */}
           <button
             type="button"
